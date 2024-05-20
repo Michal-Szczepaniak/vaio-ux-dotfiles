@@ -13,7 +13,11 @@ Modified kernel PS/2 driver to disable annoying drag on the pointer stick. Didn'
 
 ## r5u870-0.3.2.tar.gz
 
-Firmware for the camera. Sadly despite firmware being loaded, `/dev/video0` does not pop up. From what I've seen it's due to driver support missing but I could also mess up something. Leaving for archival purposes
+Firmware and drivers for the camera. Leaving for archival purposes
+
+## r5u87x.tar.gz
+
+Firmware loader for the camera. The firmware loader compiles and works but the drivers don't support our camera. I think we need the above drivers. Leaving for archival purposes.
 
 ## vaiofand-0.10.1.tar.xz
 
