@@ -1,0 +1,12 @@
+[Unit]
+Description=Sony Vaio fan controller
+After=local-fs.target remote-fs.target syslog.target
+
+[Service]
+ExecStart=/usr/sbin/vaiofand --no-daemon
+ExecReload=/bin/kill -HUP $(MAINPID)
+StandardOutput=syslog
+SyslogLevel=debug
+
+[Install]
+WantedBy=sysinit.target
